@@ -13,7 +13,7 @@
       font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #fff59d, #ffd700, #ff80ab);
+      background: linear-gradient(135deg, #ffb6c1, #ffd700);
       text-align: center;
       color: #333;
     }
@@ -24,19 +24,9 @@
       background: rgba(255, 245, 230, 0.8);
     }
 
-    .profile-pic {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      margin: 20px auto;
-      border: 5px solid gold;
-      background: url('https://i.ibb.co/Lnd08rQ/sunset-beach.jpg') center/cover no-repeat;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.25);
-    }
-
     h1 {
       font-family: 'Great Vibes', cursive;
-      font-size: 3rem;
+      font-size: 3.5rem;
       color: #d63384;
       margin: 0.5rem 0;
     }
@@ -54,6 +44,7 @@
     h2 {
       color: #b8860b;
       margin-bottom: 1rem;
+      font-size: 2rem;
     }
 
     .video-section {
@@ -100,6 +91,25 @@
       padding: 8px 14px;
       font-weight: 500;
       color: #d63384;
+      position: relative;
+      transition: transform 0.3s, background 0.3s, color 0.3s;
+      cursor: pointer;
+    }
+
+    .teammate::after {
+      content: " 🏐";
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .teammate:hover {
+      transform: scale(1.15);
+      background: gold;
+      color: white;
+    }
+
+    .teammate:hover::after {
+      opacity: 1;
     }
 
     footer {
@@ -113,9 +123,8 @@
 </head>
 <body>
   <header>
-    <div class="profile-pic"></div>
     <h1>Charlotte</h1>
-    <p class="bio">I love volleyball and hanging out with friends</p>
+    <p class="bio">Hi I'm Charlotte. Volleyball is my main sport, and I love to play and hang out with friends.</p>
   </header>
 
   <section>
@@ -126,23 +135,7 @@
       <div class="video-links">
         <a href="https://www.youtube.com/shorts/UymwFa06dhU" target="_blank">Watch Video</a>
       </div>
-      <p>Learn the basics of setting — how to use soft hands and precision to set up your teammates for the perfect spike.</p>
-    </div>
-
-    <div class="video-section">
-      <h3>💥 Spiking</h3>
-      <div class="video-links">
-        <a href="https://www.youtube.com/shorts/q42TkAIJdho" target="_blank">Watch Video</a>
-      </div>
-      <p>Spiking is about power and timing. This video shows how to approach, jump, and smash the ball for maximum impact.</p>
-    </div>
-
-    <div class="video-section">
-      <h3>🎯 Serving</h3>
-      <div class="video-links">
-        <a href="https://www.youtube.com/shorts/3rf0ZTwn7H" target="_blank">Watch Video</a>
-      </div>
-      <p>Serving starts every rally. Master different types of serves to keep your opponents on their toes.</p>
+      <p>Setting is about precision and soft hands to give your teammates the perfect chance to score.</p>
     </div>
 
     <div class="video-section">
@@ -150,15 +143,23 @@
       <div class="video-links">
         <a href="https://www.youtube.com/shorts/gNDh5v_avcA" target="_blank">Watch Video</a>
       </div>
-      <p>Passing is all about control. Learn how to pass the ball accurately to set up your team’s offense.</p>
+      <p>Passing is about control. Learn how to accurately direct the ball to set up your team’s plays.</p>
     </div>
 
     <div class="video-section">
-      <h3>🤸 Diving</h3>
+      <h3>💥 Spiking</h3>
       <div class="video-links">
-        <a href="https://www.youtube.com/shorts/9zvRnaWP0sQ" target="_blank">Watch Video</a>
+        <a href="https://www.youtube.com/shorts/q42TkAIJdho" target="_blank">Watch Video</a>
       </div>
-      <p>Diving is about hustle and defense. This clip shows how to safely dive to save the ball and keep the play alive.</p>
+      <p>Spiking is about timing and power. See how to approach, jump, and smash the ball effectively.</p>
+    </div>
+
+    <div class="video-section">
+      <h3>🎯 Serving</h3>
+      <div class="video-links">
+        <a href="https://www.youtube.com/shorts/3rf0ZTwn7Hs" target="_blank">Watch Video</a>
+      </div>
+      <p>Serving starts every rally. This video shows how to master different serves to surprise opponents.</p>
     </div>
   </section>
 
@@ -166,11 +167,11 @@
     <h2>My Teammates</h2>
     <div class="teammates">
       <div class="teammate">Oriana</div>
-      <div class="teammate">Allison</div>
-      <div class="teammate">Lauren</div>
-      <div class="teammate">Jazmine</div>
-      <div class="teammate">Parker</div>
       <div class="teammate">Chloe</div>
+      <div class="teammate">Jazmine</div>
+      <div class="teammate">Lauren</div>
+      <div class="teammate">Allison</div>
+      <div class="teammate">Harper</div>
       <div class="teammate">Bella</div>
     </div>
   </section>
@@ -180,3 +181,4 @@
   </footer>
 </body>
 </html>
+
