@@ -1,76 +1,182 @@
 <!DOCTYPE html>
-<header>
-<h1>Charlotte</h1>
-<p class="bio">I love volleyball and hanging out with friends</p>
-</header>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charlotte's Volleyball Profile</title>
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-<section>
-<h2>Volleyball Skills</h2>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #fff59d, #ffd700, #ff80ab);
+      text-align: center;
+      color: #333;
+    }
 
+    header {
+      padding: 2rem;
+      border-bottom: 4px solid gold;
+      background: rgba(255, 245, 230, 0.8);
+    }
 
-<div class="video-section">
-<h3>🏐 Setting</h3>
-<div class="video-links">
-<a href="https://www.youtube.com/shorts/UymwFa06dhU" target="_blank">Watch Video</a>
-</div>
-<p>Learn the basics of setting — how to use soft hands and precision to set up your teammates for the perfect spike.</p>
-</div>
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin: 20px auto;
+      border: 5px solid gold;
+      background: url('https://i.ibb.co/Lnd08rQ/sunset-beach.jpg') center/cover no-repeat;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+    }
 
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      color: #d63384;
+      margin: 0.5rem 0;
+    }
 
-<div class="video-section">
-<h3>💥 Spiking</h3>
-<div class="video-links">
-<a href="https://www.youtube.com/shorts/q42TkAIJdho" target="_blank">Watch Video</a>
-</div>
-<p>Spiking is about power and timing. This video shows how to approach, jump, and smash the ball for maximum impact.</p>
-</div>
+    .bio {
+      font-size: 1.2rem;
+      color: #5c3d2e;
+      margin-bottom: 1rem;
+    }
 
+    section {
+      padding: 2rem;
+    }
 
-<div class="video-section">
-<h3>🎯 Serving</h3>
-<div class="video-links">
-<a href="https://www.youtube.com/shorts/3rf0ZTwn7H" target="_blank">Watch Video</a>
-</div>
-<p>Serving starts every rally. Master different types of serves to keep your opponents on their toes.</p>
-</div>
+    h2 {
+      color: #b8860b;
+      margin-bottom: 1rem;
+    }
 
+    .video-section {
+      margin-bottom: 2rem;
+    }
 
-<div class="video-section">
-<h3>📥 Passing</h3>
-<div class="video-links">
-<a href="https://www.youtube.com/shorts/gNDh5v_avcA" target="_blank">Watch Video</a>
-</div>
-<p>Passing is all about control. Learn how to pass the ball accurately to set up your team’s offense.</p>
-</div>
+    .video-section p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: #444;
+    }
 
+    .video-links a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      background: pink;
+      border: 2px solid gold;
+      border-radius: 25px;
+      padding: 10px 18px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #d63384;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.2s, background 0.2s;
+    }
 
-<div class="video-section">
-<h3>🤸 Diving</h3>
-<div class="video-links">
-<a href="https://www.youtube.com/shorts/9zvRnaWP0sQ" target="_blank">Watch Video</a>
-</div>
-<p>Diving is about hustle and defense. This clip shows how to safely dive to save the ball and keep the play alive.</p>
-</div>
-</section>
+    .video-links a:hover {
+      transform: scale(1.07);
+      background: #ffe5ec;
+    }
 
+    .teammates {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 20px;
+    }
 
-<section>
-<h2>My Teammates</h2>
-<div class="teammates">
-<div class="teammate">Oriana</div>
-<div class="teammate">Allison</div>
-<div class="teammate">Lauren</div>
-<div class="teammate">Jazmine</div>
-<div class="teammate">Parker</div>
-<div class="teammate">Chloe</div>
-<div class="teammate">Bella</div>
-</div>
-</section>
+    .teammate {
+      background: #ffe5ec;
+      border: 1px solid gold;
+      border-radius: 20px;
+      padding: 8px 14px;
+      font-weight: 500;
+      color: #d63384;
+    }
 
+    footer {
+      padding: 1rem;
+      background: rgba(255, 245, 230, 0.9);
+      border-top: 3px solid gold;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="profile-pic"></div>
+    <h1>Charlotte</h1>
+    <p class="bio">I love volleyball and hanging out with friends</p>
+  </header>
 
-<footer>
-Made with 💖 & ✨ by Charlotte
-</footer>
+  <section>
+    <h2>Volleyball Skills</h2>
+
+    <div class="video-section">
+      <h3>🏐 Setting</h3>
+      <div class="video-links">
+        <a href="https://www.youtube.com/shorts/UymwFa06dhU" target="_blank">Watch Video</a>
+      </div>
+      <p>Learn the basics of setting — how to use soft hands and precision to set up your teammates for the perfect spike.</p>
+    </div>
+
+    <div class="video-section">
+      <h3>💥 Spiking</h3>
+      <div class="video-links">
+        <a href="https://www.youtube.com/shorts/q42TkAIJdho" target="_blank">Watch Video</a>
+      </div>
+      <p>Spiking is about power and timing. This video shows how to approach, jump, and smash the ball for maximum impact.</p>
+    </div>
+
+    <div class="video-section">
+      <h3>🎯 Serving</h3>
+      <div class="video-links">
+        <a href="https://www.youtube.com/shorts/3rf0ZTwn7H" target="_blank">Watch Video</a>
+      </div>
+      <p>Serving starts every rally. Master different types of serves to keep your opponents on their toes.</p>
+    </div>
+
+    <div class="video-section">
+      <h3>📥 Passing</h3>
+      <div class="video-links">
+        <a href="https://www.youtube.com/shorts/gNDh5v_avcA" target="_blank">Watch Video</a>
+      </div>
+      <p>Passing is all about control. Learn how to pass the ball accurately to set up your team’s offense.</p>
+    </div>
+
+    <div class="video-section">
+      <h3>🤸 Diving</h3>
+      <div class="video-links">
+        <a href="https://www.youtube.com/shorts/9zvRnaWP0sQ" target="_blank">Watch Video</a>
+      </div>
+      <p>Diving is about hustle and defense. This clip shows how to safely dive to save the ball and keep the play alive.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>My Teammates</h2>
+    <div class="teammates">
+      <div class="teammate">Oriana</div>
+      <div class="teammate">Allison</div>
+      <div class="teammate">Lauren</div>
+      <div class="teammate">Jazmine</div>
+      <div class="teammate">Parker</div>
+      <div class="teammate">Chloe</div>
+      <div class="teammate">Bella</div>
+    </div>
+  </section>
+
+  <footer>
+    Made with 💖 & ✨ by Charlotte
+  </footer>
 </body>
 </html>
